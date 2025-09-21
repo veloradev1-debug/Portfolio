@@ -42,7 +42,21 @@
           <p class="lead">I build tailored sites for small businesses: shops, clinics, cafes and service providers. Each demo below is production-ready and easy to white-label for a client.</p>
           <div class="hero-actions">
             <button class="cta" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
-            <button class="nav-link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+<button class="nav-link" onclick="downloadPDF()">Get the price list</button>
+
+<script>
+  function downloadPDF() {
+    const link = document.createElement("a");
+    link.href = "/Users/cristal/Desktop/prot/files/the velora pdf04.pdf";  // ضع هنا مسار ملفك
+    link.download = "quote.pdf";     // اسم الملف عند التنزيل
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
+
+
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
