@@ -42,12 +42,12 @@
           <p class="lead">I build tailored sites for small businesses: shops, clinics, cafes and service providers. Each demo below is production-ready and easy to white-label for a client.</p>
           <div class="hero-actions">
             <button class="cta" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
-<button class="nav-link" onclick="downloadPDF()">Get the price list</button>
+           <button class="nav-link" onclick="downloadPDF()">Get the price list</button>
 
 <script>
   function downloadPDF() {
     const link = document.createElement("a");
-    link.href = "/Users/cristal/Desktop/prot/files/the velora pdf04.pdf.zipq";  // ضع هنا مسار ملفك
+    link.href = "files/the velora pdf04.pdf";  // ضع هنا مسار ملفك
     link.download = "quote.pdf";     // اسم الملف عند التنزيل
     document.body.appendChild(link);
     link.click();
@@ -56,13 +56,8 @@
 </script>
 
 
+</div>
 
-          </div>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <img src="image/i1.jpeg "project showcase">
-        </div>
-      </section>
 
       <!-- Projects -->
       <section id="projects" class="projects" aria-label="projects">
