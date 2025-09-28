@@ -250,3 +250,23 @@ section.projects{margin-top:18px}
   .modal-hero{height:220px}
   
 }
+   /* === في حالة تفعيل كود الـ focus === */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a, input, textarea, select {
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--primary-color, );
+  outline-offset: 4px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary-color, ) 30%, transparent);
+  }

@@ -42,22 +42,13 @@
           <p class="lead">I build tailored sites for small businesses: shops, clinics, cafes and service providers. Each demo below is production-ready and easy to white-label for a client.</p>
           <div class="hero-actions">
             <button class="cta" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
-           <button class="nav-link" onclick="downloadPDF()">Get the price list</button>
-
-<script>
-  function downloadPDF() {
-    const link = document.createElement("a");
-    link.href = "files/the velora pdf04.pdf";  // ضع هنا مسار ملفك
-    link.download = "quote.pdf";     // اسم الملف عند التنزيل
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-</script>
-
-
-</div>
-
+            <button class="nav-link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="image/i1.jpeg "project showcase">
+        </div>
+      </section>
 
       <!-- Projects -->
       <section id="projects" class="projects" aria-label="projects">
@@ -69,6 +60,33 @@
         <div class="grid">
           <!-- Project cards ... (نفس الكود كما هو) -->
           <!-- ⚠️ لم أغير شيء بداخل كل project-card -->
+                 <article class="project-card" data-title="A complete website for a pet clinic with an appointment booking page and a small online store." data-img="https://images.unsplash.com/photo-1542834369-f10ebf06d3fb?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" data-live="#">
+            <div class="project-visual"><img src="image/peat.png" alt="ecommerce demo"></div>
+            <div class="project-body">
+              <div class="project-title">PetCare Clinic — Demo Clinic</div>
+              <div class="project-desc">A complete website for a pet clinic with an appointment booking page and a small online store.</div>
+              <div class="project-tags"><span class="tag">Booking</span><span class="tag">clinic</span><span class="tag">shop</span></div>
+            </div>
+            <div class="project-actions">
+             
+              <a class="btn-link btn-primary" href="https://veloradev1-debug.github.io/veterinary-clinic/index.html" target="_blank">Live Demo</a>
+            </div>
+          </article>
+
+               <article class="project-card" data-title="A complete website for a pet clinic with an appointment booking page and a small online store." data-img="https://images.unsplash.com/photo-1542834369-f10ebf06d3fb?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" data-live="#">
+            <div class="project-visual"><img src="image/reas.png" alt="ecommerce demo"></div>
+            <div class="project-body">
+              <div class="project-title">restaurant — Demo restaurant</div>
+              <div class="project-desc">A complete website for a restaurant with an online reservation system and appointment booking page and menu management.</div>
+              <div class="project-tags"><span class="tag">Booking</span><span class="tag">restaurant</span><span class="tag">menu</span></div>
+            </div>
+            <div class="project-actions">
+             
+              <a class="btn-link btn-primary" href="https://veloradev1-debug.github.io/restaurant/index.html" target="_blank">Live Demo</a>
+            </div>
+          </article>
+
+
            <!-- Project 1: E‑Commerce Store -->
           <article class="project-card" data-title="E‑Shop — Demo Store" data-desc="Full demo store with product listings, cart, and order flow. Perfect starter store for local merchants." data-img="https://images.unsplash.com/photo-1542834369-f10ebf06d3fb?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" data-live="#">
             <div class="project-visual"><img src="image/techcore.png" alt="ecommerce demo"></div>
