@@ -1,31 +1,40 @@
-// contact.js
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const formMessage = document.getElementById('formMessage');
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Simple validation check
+    // التحقق من صحة الحقول
     if (!form.name.value.trim()) {
-      showMessage('Please enter your name.', true);
-      return;
+      return showMessage('Please enter your name.', true);
     }
     if (!validateEmail(form.email.value.trim())) {
-      showMessage('Please enter a valid email address.', true);
-      return;
+      return showMessage('Please enter a valid email address.', true);
     }
     if (!form.message.value.trim()) {
-      showMessage('Please enter your message.', true);
-      return;
+      return showMessage('Please enter your message.', true);
     }
 
-    // Simulate sending message
+    // عرض رسالة مؤقتة
     showMessage('Sending message...', false);
-    setTimeout(() => {
-      form.reset();
-      showMessage('Message sent successfully! Thank you.', false);
-    }, 1500);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+
+      if (response.ok) {
+        form.reset();
+        showMessage('✅ Message sent successfully! Thank you.', false);
+      } else {
+        showMessage('❌ Failed to send message. Please try again.', true);
+      }
+    } catch (error) {
+      showMessage('⚠️ Network error. Please try again later.', true);
+    }
   });
 
   function showMessage(message, isError) {
@@ -34,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function validateEmail(email) {
-    // Simple email regex
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 });
