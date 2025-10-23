@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <div class="wrap">
@@ -26,10 +26,11 @@
         </div>
       </a>
 
-      <nav aria-label="Main navigation">
-        <button class="cta" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</button>
-        <button class="nav-link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</button>
-        <button class="nav-link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Contact</button>
+         <nav aria-label="Main navigation">
+        <button class="cta" onclick="window.location.href='contact.html'">Contact</button> 
+         <button class="nav-link" onclick="window.location.href='#projects'">Projects</button>
+        <button class="nav-link" onclick="window.location.href='index.html'">Home</button>
+    
       </nav>
     </header>
 
@@ -41,8 +42,9 @@
           <h2>High-quality, conversion-focused websites — fast and responsive.</h2>
           <p class="lead">I build tailored sites for small businesses: shops, clinics, cafes and service providers. Each demo below is production-ready and easy to white-label for a client.</p>
           <div class="hero-actions">
-            <button class="cta" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
-            <button class="nav-link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+             <button class="cta" onclick="window.location.href='#projects'">Projects</button>
+<button class="nav-link" onclick="window.location.href='contact.html'"> Contact</button>
+<button class="nav-link" onclick="window.location.href='#pricing'"> Services Prices</button>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -50,11 +52,38 @@
         </div>
       </section>
 
-      <!-- Projects -->
+<!-- ===== WHY CHOOSE ===== -->
+  <section class="why-choose container">
+    <h2>Why Choose Velora Dev?</h2>
+    <div class="features">
+      <div class="feature">
+        <!-- Doctor stethoscope -->
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#5ec2b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer-icon lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+        <h3>Fast & Optimized Performance</h3>
+        <p>Our sites are crafted with speed and efficiency in mind, ensuring a smooth user experience on all devices.</p>
+      </div>
+
+      <div class="feature">
+        <!-- Emergency cross -->
+       <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#7ed4e6" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-app-window-icon lucide-app-window"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M2 8h20"/><path d="M6 4v4"/></svg>
+        <h3>Modern & Custom Designy</h3>
+        <p>We create websites tailored to your vision clean, modern, and built to reflect your brand’s unique identity.</p>
+      </div>
+
+      <div class="feature">
+        <!-- Clinic building -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#5ec2b7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headset-icon lucide-headset"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></svg>
+        <h3>Ongoing Support & Growth</h3>
+        <p>We don’t just deliver and disappear ,we stay by your side with updates, support, and growth strategies.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects -->
       <section id="projects" class="projects" aria-label="projects">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
-          <h2 style="margin:0">Selected Demo Projects</h2>
-          
+        <div class="section-header">
+          <h1>Our Projects</h1>
+          <p></p>
         </div>
 
         <div class="grid">
@@ -110,7 +139,6 @@
               <div class="project-tags"><span class="tag">Booking</span><span class="tag">Clinic</span></div>
             </div>
             <div class="project-actions">
-           
               <a class="btn-link btn-primary" href="https://veloradev1-debug.github.io/velora-smile/" target="_blank">Live Demo</a>
             </div>
           </article>
@@ -159,18 +187,61 @@
         </div>
       </section>
 
-      <!-- About -->
-      <section id="about" style="margin-top:26px">
-        <!-- ... نفس الكود ... -->
-          <div style="display:flex;gap:18px;align-items:center">
-          <div style="flex:1">
-            <h3 style="margin-top:0">About Velora Dev</h3>
-            <p style="color:var(--muted)">At Velora Dev, we specialize in crafting modern, responsive, and user-friendly websites that bring your vision to life. Our focus is on combining clean design with powerful functionality, ensuring that every project not only looks great but also performs seamlessly. Whether you need a business website, an online store, or a custom web solution, we deliver with professionalism, creativity, and attention to detail.</p>
+
+
+  <section id="pricing" class="pricing">
+      <div class="container section-inner">
+        <h3 class="section-title">Services Prices</h3>
+       
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-head">
+              <h4>Landing Page</h4>
+              <span class="price-from">from $150</span>
+            </div>
+            <ul class="price-features">
+              <li><i class="fa-solid fa-check"></i> 1 Page</li>
+              <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+              <li><i class="fa-solid fa-check"></i> Contact Form</li>
+              <li><i class="fa-solid fa-check"></i> Basic SEO</li>
+            </ul>
+            <a class="btn btn-primary" href="contact.html">Get Started</a>
           </div>
-          
+
+          <div class="price-card ">
+            <div class="price-head">
+              <h4>Business Website</h4>
+              <span class="price-from">from $300</span>
+            </div>
+            <ul class="price-features">
+              <li><i class="fa-solid fa-check"></i> Up to 5 Pages</li>
+              <li><i class="fa-solid fa-check"></i> CMS Integration</li>
+              <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+              <li><i class="fa-solid fa-check"></i> Advanced SEO</li>
+            </ul>
+            <a class="btn btn-primary" href="contact.html">Get Started</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-head">
+              <h4>E-commerce Website</h4>
+              <span class="price-from">from $450</span>
+            </div>
+            <ul class="price-features">
+              <li><i class="fa-solid fa-check"></i> Full Store Setup</li>
+              <li><i class="fa-solid fa-check"></i> Payment Gateways</li>
+              <li><i class="fa-solid fa-check"></i> Inventory Management</li>
+              <li><i class="fa-solid fa-check"></i> Product Management</li>
+            </ul>
+            <a class="btn btn-primary" href="contact.html">Get Started</a>
+          </div>
         </div>
-      </section>
-     <footer class="site-footer" role="contentinfo" aria-label="Velora Dev footer">
+        <p class="pricing-note">Prices rise and fall depending on each project, the time, complexity, and client requirements.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Velora Dev footer">
   <div class="site-footer__inner">
 
     <!-- Brand -->
@@ -273,6 +344,6 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="script.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>
